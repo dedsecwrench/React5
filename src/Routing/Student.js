@@ -22,12 +22,18 @@ const tableCellS = {
 
 const Student = () => {
 
-  const [stdData]= useContext(StudentContext)
+  const [stdData,setStdData]= useContext(StudentContext)
   const navigate = useNavigate();
 
   const goToUpdatePage = (index) =>{
     navigate(`/student/update/${index}`)
   }
+  const del = (index) =>{
+    let updatedArr = stdData;
+    updatedArr.splice(index,1);
+    setStdData([...updatedArr])
+    console.log(stdData);
+  } 
   return (
         <>
           <div className='container top-div'>
@@ -35,7 +41,7 @@ const Student = () => {
               Student Details
             </div>
             <div className='div1 div2'>
-            <button onClick={()=>navigate('/student/addStudent')} className='btn btn-primary add'><img src = "https://cdn-icons-png.flaticon.com/512/265/265674.png" alt="" className='i1'/> Add Student</button>
+            <button onClick={()=>navigate('/student/addStudent')} className='btn btn-primary add'><img src = "https://cdn-icons-png.flaticon.com/512/265/265674.png" className='i1'/> Add Student</button>
             </div>
         </div>
 
@@ -51,6 +57,7 @@ const Student = () => {
             <TableCell style={tableHead} align="center">Course</TableCell>
             <TableCell style={tableHead} align="center">Batch</TableCell>
             <TableCell style={tableHead} align="center">Change</TableCell>
+            <TableCell style={tableHead} align="center">Delete</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -62,7 +69,8 @@ const Student = () => {
                         <TableCell style={tableCellS} align="center">{current.age}</TableCell>
                         <TableCell style={tableCellS} align="center">{current.course}</TableCell>
                         <TableCell style={tableCellS} align="center">{current.batch}</TableCell>
-                        <TableCell style={tableCellS} align="center"><button className='edit' onClick={()=>{goToUpdatePage(index)}} ><img src="https://findicons.com/files/icons/2166/oxygen/48/edit.png" alt="" className='i2'/> Edit</button></TableCell>
+                        <TableCell style={tableCellS} align="center"><button className='edit' onClick={()=>{goToUpdatePage(index)}} ><img src="https://findicons.com/files/icons/2166/oxygen/48/edit.png" className='i2'/> Edit</button></TableCell>
+                        <TableCell style={tableCellS} align="center"><button className='del' onClick={()=>{del(index)}} ><img src="https://img.icons8.com/glyph-neue/344/ffffff/trash.png" className='i3'/> Delete</button></TableCell>
                         </TableRow>
                     )
                 })
