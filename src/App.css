@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* --------------------------------------------------------------------------------------------------- */
+body{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navbar-nav{
+  width: 100%;
+}
+
+.edit{
+  width: 80px;
+  border-radius: 4px;
+  background-color: #29bd16;
+  color: #ffffff;
+  border: none;
+}
+.edit:hover{
+  background-color: #2d8d20;
+}
+
+.nav-item{
+  font-size: 28px;
+  width:100px;
+  padding-left: 270px;
+}
+
+.add{
+  position:relative;
+  right: 85px;
+  height:50px;
+  width:200px;
+  font-size: 22px;
+}
+.add:hover{
+  background-color: rgb(3, 77, 174);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.top-div{
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.div1{
+  width:88%;
+  font-size: 34px;
+  text-align: left;
+  padding-left: 21px;
+}
+.div2{
+  width:12%;
+}
+
+.tab{
+  padding: 20px;
+}
+
+.nav-link{
+  font-size: 33px;
+}
+
+label{
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  display: inline-block;
+}
+
+.text-field{
+  height: 40px;
+  width: 350px;
+  border-radius: 20px;
+  position: relative;
+  right: 5px;
+  padding-left: 15px;
+  font-size: 20px;
+  background-color: #4e4e4e;
+  border: none;
+  color: #ffffff;
+}
+.btnz{
+  height: 50px;
+  width: 130px;
+  border-radius: 40px;
+  font-size: 22px;
+}
+
+.form{
+  width: 540px;
+  position: relative;
+  top:40px;
+  margin: auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  background-color: rgb(35, 35, 35);
+}
+.i1{
+  height:32px;
+  width: 32px;
+  position: relative;
+  bottom: 4px;
+  right:4px;
+}
+.i2{
+  height:20px;
+  width: 20px;
+  position: relative;
+  bottom: 1px;
+}
