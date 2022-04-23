@@ -98,9 +98,10 @@ body{
 }
 .div1{
   width:88%;
-  font-size: 34px;
+  font-size: 35px;
   text-align: left;
   padding-left: 21px;
+  color: #61dafb;
 }
 .div2{
   width:12%;
@@ -248,5 +249,8 @@ button:hover span::before, button:hover span::after{
   height: 100%;
 }
 .buttonz:focus{
+  color: #61dafb;
+}
+h2{
   color: #61dafb;
 }
