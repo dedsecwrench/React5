@@ -56,7 +56,7 @@ const Student = () => {
             <TableCell style={tableHead} align="center">Course</TableCell>
             <TableCell style={tableHead} align="center">Batch</TableCell>
             <TableCell style={tableHead} align="center">Change</TableCell>
-            <TableCell style={tableHead} align="center">Delete</TableCell>
+            <TableCell style={tableHead} align="center">Remove</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
