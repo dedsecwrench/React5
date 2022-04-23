@@ -35,7 +35,7 @@ const Student = () => {
               Student Details
             </div>
             <div className='div1 div2'>
-            <button onClick={()=>navigate('/student/addStudent')} className='btn btn-primary add'><img src = "https://cdn-icons-png.flaticon.com/512/265/265674.png" className='i1'/> Add Student</button>
+            <button onClick={()=>navigate('/student/addStudent')} className='btn btn-primary add'><img src = "https://cdn-icons-png.flaticon.com/512/265/265674.png" alt="" className='i1'/> Add Student</button>
             </div>
         </div>
 
@@ -62,7 +62,7 @@ const Student = () => {
                         <TableCell style={tableCellS} align="center">{current.age}</TableCell>
                         <TableCell style={tableCellS} align="center">{current.course}</TableCell>
                         <TableCell style={tableCellS} align="center">{current.batch}</TableCell>
-                        <TableCell style={tableCellS} align="center"><button className='edit' onClick={()=>{goToUpdatePage(index)}} ><img src="https://cdn-icons.flaticon.com/png/512/738/premium/738880.png?token=exp=1650659310~hmac=2a2ea4d1670b3d8f98bde8d0250fe28a" className='i2'/> Edit</button></TableCell>
+                        <TableCell style={tableCellS} align="center"><button className='edit' onClick={()=>{goToUpdatePage(index)}} ><img src="https://cdn-icons.flaticon.com/png/512/738/premium/738880.png?token=exp=1650659310~hmac=2a2ea4d1670b3d8f98bde8d0250fe28a" alt="" className='i2'/> Edit</button></TableCell>
                         </TableRow>
                     )
                 })
