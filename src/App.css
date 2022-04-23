@@ -150,3 +150,73 @@ label{
   position: relative;
   bottom: 1px;
 }
+
+
+.btn-4::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-4 span::after{
+  right:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn-4::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+
+.btn-4 span::before{
+  left: 0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+
+.buttonz{
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: rgba(27, 27, 27, 0.09);
+  font-size: 33px;
+  width: 300px;
+}
+span{
+  display: block;
+  padding: 20px;
+}
+.buttonz::before, .buttonz::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #61dafb;
+}
+.buttonz:hover{
+  color: #61dafb;
+}
+
+span::before, span::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #61dafb;
+}
+.buttonz:hover::before, .buttonz:hover::after{
+  width: 100%;
+}
+button:hover span::before, button:hover span::after{
+  height: 100%;
+}
+.buttonz:focus{
+  color: #61dafb;
+}
