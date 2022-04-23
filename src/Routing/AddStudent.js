@@ -27,13 +27,13 @@ const AddStudent = () => {
         <br/>
         <form>
         <label htmlFor="name">Name</label>
-        <input type="text" name="name" value={std.name} onChange={(e)=>setStd({...std,name:e.target.value})} autoComplete="off" className='text-field' spellcheck="false"/>  <br/>  <br/>
+        <input type="text" name="name" value={std.name} onChange={(e)=>setStd({...std,name:e.target.value})} autoComplete="off" className='text-field' spellCheck="false"/>  <br/>  <br/>
         <label htmlFor="age">Age</label>
-        <input type="number" name="age" value={std.age} onChange={(e)=>setStd({...std,age:e.target.value})} autoComplete="off" className='text-field' spellcheck="false"/>  <br/>  <br/>
+        <input type="number" name="age" value={std.age} onChange={(e)=>setStd({...std,age:e.target.value})} autoComplete="off" className='text-field' spellCheck="false"/>  <br/>  <br/>
         <label htmlFor="course">Course</label>
-        <input type="text" name="course" value={std.course} onChange={(e)=>setStd({...std,course:e.target.value})} autoComplete="off" className='text-field' spellcheck="false"/>  <br/>  <br/>
+        <input type="text" name="course" value={std.course} onChange={(e)=>setStd({...std,course:e.target.value})} autoComplete="off" className='text-field' spellCheck="false"/>  <br/>  <br/>
         <label htmlFor="batch">Batch</label>
-        <input type="text" name="batch" value={std.batch} onChange={(e)=>setStd({...std,batch:e.target.value})} autoComplete="off" className='text-field' spellcheck="false"/><br/>  <br/>
+        <input type="text" name="batch" value={std.batch} onChange={(e)=>setStd({...std,batch:e.target.value})} autoComplete="off" className='text-field' spellCheck="false"/><br/>  <br/>
         <button className='btn btn-success addBtn btnz' onClick={getDetails}>Add</button> 
         </form>
         <br/>
