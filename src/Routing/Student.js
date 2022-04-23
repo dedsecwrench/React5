@@ -62,7 +62,7 @@ const Student = () => {
                         <TableCell style={tableCellS} align="center">{current.age}</TableCell>
                         <TableCell style={tableCellS} align="center">{current.course}</TableCell>
                         <TableCell style={tableCellS} align="center">{current.batch}</TableCell>
-                        <TableCell style={tableCellS} align="center"><button className='edit' onClick={()=>{goToUpdatePage(index)}} ><img src="https://cdn-icons.flaticon.com/png/512/738/premium/738880.png?token=exp=1650659310~hmac=2a2ea4d1670b3d8f98bde8d0250fe28a" alt="" className='i2'/> Edit</button></TableCell>
+                        <TableCell style={tableCellS} align="center"><button className='edit' onClick={()=>{goToUpdatePage(index)}} ><img src="https://findicons.com/files/icons/2166/oxygen/48/edit.png" alt="" className='i2'/> Edit</button></TableCell>
                         </TableRow>
                     )
                 })
