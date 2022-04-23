@@ -32,7 +32,6 @@ const Student = () => {
     let updatedArr = stdData;
     updatedArr.splice(index,1);
     setStdData([...updatedArr])
-    console.log(stdData);
   } 
   return (
         <>
