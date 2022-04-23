@@ -58,10 +58,20 @@ body{
   background-color: #2d8d20;
 }
 
+.del{
+  width: 110px;
+  border-radius: 4px;
+  background-color: #df3f2a;
+  color: #ffffff;
+  border: none;
+}
+.del:hover{
+  background-color: #ba3624;
+}
+
 .nav-item{
   font-size: 28px;
   width:100px;
-  /* padding-left: 270px; */
   padding-left: 80px; 
 }
 
@@ -125,7 +135,6 @@ label{
   border: none;
   color: #ffffff;
 }
-
 input[type="text"],input[type="number"]{
   outline: none;
   box-shadow:none !important;
@@ -164,6 +173,13 @@ input::-webkit-inner-spin-button {
   width: 20px;
   position: relative;
   bottom: 1px;
+}
+
+.i3{
+  height:22px;
+  width: 22px;
+  position: relative;
+  bottom: 2px;
 }
 
 .btn-4::after{
