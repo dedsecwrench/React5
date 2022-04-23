@@ -29,13 +29,13 @@ const Update = () => {
         <br/>
         <form>
         <label htmlFor="name">Name</label>&nbsp; 
-        <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} autoComplete="off" className='text-field' spellcheck="false"/>  <br/>  <br/>
+        <input type="text" name="name" value={name} onChange={(e)=>setName(e.target.value)} autoComplete="off" className='text-field' spellCheck="false"/>  <br/>  <br/>
         <label htmlFor="age">Age</label>&nbsp; 
-        <input type="number" name="age" value={age} onChange={(e)=>setAge(e.target.value)} autoComplete="off" className='text-field' spellcheck="false"/>  <br/>  <br/>
+        <input type="number" name="age" value={age} onChange={(e)=>setAge(e.target.value)} autoComplete="off" className='text-field' spellCheck="false"/>  <br/>  <br/>
         <label htmlFor="course">Course</label>&nbsp; 
-        <input type="text" name="course" value={course} onChange={(e)=>setCourse(e.target.value)} autoComplete="off" className='text-field' spellcheck="false"/>  <br/>  <br/>
+        <input type="text" name="course" value={course} onChange={(e)=>setCourse(e.target.value)} autoComplete="off" className='text-field' spellCheck="false"/>  <br/>  <br/>
         <label htmlFor="batch">Batch</label>&nbsp; 
-        <input type="text" name="batch" value={batch} onChange={(e)=>setBatch(e.target.value)} autoComplete="off" className='text-field' spellcheck="false"/><br/>  <br/>
+        <input type="text" name="batch" value={batch} onChange={(e)=>setBatch(e.target.value)} autoComplete="off" className='text-field' spellCheck="false"/><br/>  <br/>
         <button className='btn btn-success addBtn btnz' onClick={getEditDetails}>Update</button> 
         </form>
         <br/>
