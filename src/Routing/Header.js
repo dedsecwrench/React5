@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Header = () => {
   return (
     <div>
-       <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <nav className="navbar navbar-expand navbar-dark bg-dark">
               <table className="navbar-nav">
                 <tr>
                 <td className="nav-item">

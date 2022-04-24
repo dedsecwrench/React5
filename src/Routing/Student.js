@@ -7,6 +7,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { StudentContext } from './StudentContext'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const tableCellS = {
     color: "white",
@@ -32,9 +34,19 @@ const Student = () => {
     let updateArr = stdData;
     updateArr.splice(index,1);
     setStdData([...updateArr])
+    console.log(stdData);
+    toast.success("Deleted Successfully!",{
+      conid: 'd1',
+      position:"top-center",
+      autoClose:1500,
+      closeButton:false
+    })
   } 
   return (
         <>
+        <ToastContainer conid='s1' theme="colored"/>
+        <ToastContainer conid='d1' theme="colored"/>
+        <ToastContainer conid='u1' theme="colored"/>
           <div className='container top-div'>
             <div className='div1'>
               Student Details
