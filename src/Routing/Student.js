@@ -34,7 +34,7 @@ const Student = () => {
     let updateArr = stdData;
     updateArr.splice(index,1);
     setStdData([...updateArr])
-    console.log(stdData);
+    console.table(stdData);
     toast.success("Deleted Successfully!",{
       conid: 'd1',
       position:"top-center",
