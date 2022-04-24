@@ -7,9 +7,9 @@ const Update = () => {
   const {id} = useParams()
   const navigate = useNavigate()
   const [stdData]= useContext(StudentContext)
-  const ID = Number(id)
+  const selectedIndex = Number(id)
 
-   const selectedIndex = stdData.findIndex(cur=>cur.id === ID)
+//    const selectedIndex = stdData.findIndex(cur=>cur.id === ID)
    const [name,setName] = useState(stdData[selectedIndex].name)
    const [age,setAge] = useState(stdData[selectedIndex].age)
    const [course,setCourse] = useState(stdData[selectedIndex].course)
@@ -17,7 +17,7 @@ const Update = () => {
 
     const getEditDetails = (e) =>{
       e.preventDefault()
-      console.log(typeof(ID))
+//       console.log(typeof(ID))
       const obj = {name,age,course,batch,id:selectedIndex}
       stdData[selectedIndex] = obj;
       navigate('/student')
